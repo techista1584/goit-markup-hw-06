@@ -433,19 +433,21 @@
                     <textarea name="modal-comment" rows="8" placeholder="Text input"></textarea>
                 </label>
 
-                <label class="modal-checkbox label" for="terms">
-                    <input type="checkbox" name="terms">
-                    <svg class="check-icon">
-                        <use href="./images/sprite/checkboxes.svg#checkmark"></use>
-                    </svg>
-                    <span>I accept the terms and conditions of the
-                        <a href="/goit-markup-hw-06/">Privacy Policy</a></span>
-                </label>
-
+                <div class="form-wrapper-checkbox">
+                    <label for="terms">
+                        <input type="checkbox" id="terms" name="terms" class="visually-hidden" />
+                        <svg class="checkbox-icon">
+                            <use href="images/check.svg#icon-check-mark-2"></use>
+                        </svg>
+                        <span class="terms-text">I accept the terms and conditions of the
+                            <a class="terms-link" href="">Privacy Policy</a>
+                        </span>
+                    </label>
+                </div>
+    
                 <button type="submit" class="send-button">Send</button>
             </form>
-            
-            
+             
         </div>
     </div>
     <script src="./js/modal.js"></script> 
