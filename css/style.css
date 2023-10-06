@@ -745,6 +745,7 @@ input,textarea {
   fill: var(--navyblue);
   width: 8px;
   height: 8px;
+  transition: fill 250ms var(--cubic-bezier);
 }
 
 .modal-close:hover {
