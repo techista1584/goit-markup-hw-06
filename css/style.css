@@ -876,8 +876,8 @@ input,textarea {
 .checkbox-icon svg{
   display: inline-block;
   position: absolute;
-  width: 16px;
-  height: 16px;
+  width: 8px;
+  height: 8px;
   margin-right: 8px;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
