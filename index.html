@@ -379,7 +379,7 @@
                     <h4 class="subscription-header">Subscribe</h4>
                     <form>
                         <label class="footer-form" for="footer-email">
-                            <input class="footer-input" type="email" name="footer-email" placeholder="E-mail">
+                            <input class="footer-input" type="email" name="footer-email" placeholder="E-mail" required>
                         </label>
                         <button class="subscribe-button" type="submit">
                             Subscribe
@@ -406,7 +406,7 @@
                 <h3 class="modal-header">Leave your contacts and we will call you back</h3>
                 <label class="modal-contacts label" for="modal-name">
                     <span>Name</span>
-                    <input class="form-input" type="text" name="modal-name">
+                    <input class="form-input" type="text" name="modal-name" required>
                     <svg class="contacts-icon" width="18">
                         <use href="./images/sprite/modal-icons.svg#person-icon"></use>
                     </svg>
@@ -414,7 +414,7 @@
 
                 <label class="modal-contacts label" for="modal-phone">
                     <span>Phone</span>
-                    <input class="form-input" type="tel" name="modal-phone">
+                    <input class="form-input" type="tel" name="modal-phone" required>
                     <svg class="contacts-icon" width="18">
                         <use href="./images/sprite/contacts-icons.svg#phone"></use>
                     </svg>
@@ -422,7 +422,7 @@
 
                 <label class="modal-contacts label" for="modal-email">
                     <span>Email</span>
-                    <input class="form-input" type="email" name="modal-email">
+                    <input class="form-input" type="email" name="modal-email" required>
                     <svg class="contacts-icon" width="18">
                         <use href="./images/sprite/contacts-icons.svg#email"></use>
                     </svg>
@@ -433,17 +433,15 @@
                     <textarea name="modal-comment" rows="8" placeholder="Text input"></textarea>
                 </label>
 
-                <div class="form-wrapper-checkbox">
-                    <label for="terms">
-                        <input type="checkbox" width="16" id="terms" name="terms" class="visually-hidden" />
-                        <svg class="checkbox-icon">
-                            <use href="images/check.svg#icon-check-mark-2"></use>
-                        </svg>
-                        <span class="terms-text">I accept the terms and conditions of the
-                            <a class="terms-link" href="">Privacy Policy</a>
-                        </span>
-                    </label>
-                </div>
+                <label for="terms" class="checkbox-label">
+                    <input type="checkbox" width="16" id="terms" name="terms" class="checkbox-input visually-hidden" required/>
+                    <svg class="checkbox-icon">
+                        <use href="images/icons/check-icon.svg#check-icon"></use>
+                    </svg>
+                    <span class="terms-text">I accept the terms and conditions of the
+                        <a class="terms-link" href="">Privacy Policy</a>
+                    </span>
+                </label>
                 <button type="submit" class="send-button">Send</button>
             </form>
              
